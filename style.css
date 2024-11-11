@@ -328,13 +328,15 @@ footer {
 
 @media (max-width: 768px) {
     header {
+      display: flex;
       padding: 10px;
       flex-direction: column;
+      align-items: center;
       gap: 15px;
     }
   
     .logo img {
-      left: 0;
+      margin: 0 auto;
       width: 60px;
       height: 60px;
     }
@@ -343,6 +345,7 @@ footer {
       right: 0;
       width: 30px;
       height: 30px;
+      justify-content: center;
     }
   
     .social_media ul {
