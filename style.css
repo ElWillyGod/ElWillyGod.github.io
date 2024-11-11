@@ -327,30 +327,39 @@ footer {
 
 
 @media (max-width: 768px) {
-    header {
-      display: flex;
+  header {
       padding: 10px;
       flex-direction: column;
-      align-items: center;
+      align-items: center; /* Centra los elementos horizontalmente */
       gap: 15px;
-    }
-  
-    .logo img {
-      margin: 0 auto;
+  }
+
+  .logo {
+      position: relative; /* Si necesitas posicionamiento */
+      width: 100%; /* O un ancho específico */
+      text-align: center; /* Centra la imagen */
+  }
+
+  .logo img {
+      position: relative; /* Si necesitas posicionamiento */
       width: 60px;
       height: 60px;
-    }
-  
-    .social_media ul li img {
-      right: 0;
+  }
+
+  .social_media {
+      width: 100%; /* O un ancho específico */
+  }
+
+  .social_media ul {
+      gap: 15px;
+      justify-content: center; /* Centra los íconos sociales */
+  }
+
+  .social_media ul li img {
+      position: relative; /* Si necesitas posicionamiento */
       width: 30px;
       height: 30px;
-      justify-content: center;
-    }
-  
-    .social_media ul {
-      gap: 15px;
-    }
+  }
 }
   
   /** Main Section Information Responsive **/
