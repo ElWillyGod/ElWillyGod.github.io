@@ -337,6 +337,7 @@ footer {
       position: relative; /* Si necesitas posicionamiento */
       width: 60px;
       height: 60px;
+      margin: 0;
   }
 
   .social_media {
@@ -345,6 +346,7 @@ footer {
   }
 
   .social_media ul {
+    width: 100%;
       gap: 15px;
       justify-content: center; /* Centra los íconos sociales */
   }
@@ -353,6 +355,8 @@ footer {
       position: relative; /* Si necesitas posicionamiento */
       width: 30px;
       height: 30px;
+      justify-content: center;
+      margin: 0;
   }
 }
   
