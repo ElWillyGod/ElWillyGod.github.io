@@ -94,62 +94,55 @@ header {
 }
 
 /** Section de Puntos y Contactos**/
-.puntos-aclarar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 0 10%;
-    /**background: #f5f5f5**/;
+.puntos-aclarar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 10%; /* Aumenté el padding vertical para dar más espacio */
 }
 
-.wrap-puntos-aclarar{
-    display: flex;
-    padding: 10px;
-    gap: 100px;
-    width: 100%;
-    height: 50%;
+.wrap-puntos-aclarar {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente las columnas */
+  gap: 100px;
+  width: 100%;
+  max-width: 1400px; /* Limita el ancho máximo para pantallas grandes */
 }
 
-.wrap-puntos-malos{
-    background: #f5f5f5;
-    box-shadow: 0 0 10px black;
-    border-radius: 10px;
-    width: 40%;
-    text-align: center;
-    padding: 10px
+.wrap-puntos-malos,
+.wrap-puntos-buenos {
+  background: #f5f5f5;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  width: 50%; /* Cambié a 50% para mejor distribución */
+  padding: 20px; /* Aumenté el padding para mejor espaciado */
+  display: flex; /* Añadido para mejorar la organización interna */
+  flex-direction: column;
+  align-items: center;
 }
 
-.wrap-puntos-buenos{
-    background: #f5f5f5;
-    box-shadow: 0 0 10px black;
-    border-radius: 10px;
-    width: 40%;
-    text-align: center;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
+.wrap-puntos-buenos img,
+.wrap-puntos-malos img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 15px; /* Espacio entre imagen y título */
 }
 
-.wrap-puntos-buenos img{
-    width: 50px;
-    height: auto;
+.wrap-puntos-buenos h2,
+.wrap-puntos-malos h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 20px; /* Espacio entre título y lista */
 }
 
-.wrap-puntos-malos img{
-    width: 50px;
-    height: auto;
-}
-
-.wrap-puntos-buenos h2, .wrap-puntos-malos h2 {
-    font-size: 2.2rem;
-    font-weight: bold;
-}
-
-.wrap-puntos-aclarar ul{
-    display: grid;
-    gap: 10px;
-}   
+.wrap-puntos-aclarar ul {
+  display: grid;
+  gap: 10px;
+  width: 100%; /* Asegura que la lista use todo el ancho disponible */
+  padding-left: 20px; /* Indentación para las viñetas */
+  text-align: left; /* Alinea el texto a la izquierda */
+}  
 
 
 /** Contactos **/
@@ -253,7 +246,7 @@ button[type="submit"]:hover {
 .team-card img {
     width: 200px;
     height: 250px;
-    border-radius: 50%;
+    border-radius: 25%;
     margin-bottom: 10px;
 }
 
@@ -348,6 +341,7 @@ footer {
 
   .social_media {
       width: 100%; /* O un ancho específico */
+      justify-content: center;
   }
 
   .social_media ul {
